@@ -1,0 +1,436 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("src/img/fundo2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0%;
+    width: 100%;
+    text-decoration: #b1afaf;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+h1,
+h2,
+.logo {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(1, 21, 38, 0.7);
+    border-radius: 20px;
+    padding: 15px 40px;
+
+
+}
+
+.logo {
+    color: #b1afaf;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 30px 25px;
+    background: #011526;
+    text-shadow: 0 0 10px #7d9191;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    border-radius: 25px;
+    text-shadow: 0 0 10px #7d9191;
+    background: #011526;
+    padding: 30px 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #b1afaf;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #8ea4a4;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    color: #b1afaf;
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-programador {
+
+    filter: drop-shadow(0 0 20px #7d9191);
+    width: 450px;
+    position: relative;
+    z-index: 1;
+    margin-left: 100px;
+
+
+}
+
+/* TEXTO */
+
+.texto {
+    position: absolute;
+    z-index: 2;
+    color: #b1afaf;
+    top: 120px;
+    left: 120px;
+    text-align: justify;
+    width: 500px;
+
+}
+
+.typing {
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 10px #7d9191;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #7d9191;
+    width: 40ch;
+    animation:
+        typing 4s steps(40, end) forwards,
+        cursor 1s step-end infinite;
+}
+
+.typing2 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #7d9191;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #7d9191;
+    width: 0;
+    width: 28ch;
+    animation:
+        typing 4s steps(35, end) 3s forwards,
+        cursor 1s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* IMAGEM */
+
+
+
+/*Sobre */
+.sobre {
+    padding: 80px 50px;
+}
+
+
+.sobreContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    color: white;
+}
+
+.sobreImg img {
+    filter: drop-shadow(0 0 20px #00ffff);
+    width: 350px;
+    position: relative;
+    z-index: 1;
+    display: block;
+
+}
+
+
+
+.sobreTexto {
+    max-width: 600px;
+    text-align: justify;
+    margin-top: 250px;
+}
+
+.sobreTexto h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.sobreTexto p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+
+/* Habilidades*/
+
+
+.hab {
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 20px;
+
+}
+
+
+.habTexto {
+    color: white;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 20px 40px;
+    text-shadow: 0 0 10px #7d9191;
+    margin-bottom: 40px;
+}
+
+
+
+.habContainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.habCard {
+    background: #011526;
+    padding: 25px;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+.habCard img {
+    width: 60px;
+}
+
+.habCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #7d9191;
+}
+
+
+
+
+/* projetos */
+
+.projetos {
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 20px;
+
+}
+
+.projTexto {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #7d9191;
+    border-radius: 25px;
+    padding: 20px 40px;
+
+    margin-bottom: 40px;
+}
+
+.projContainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.projCard {
+    background: #011526;
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.projCard img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.projCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #7d9191;
+}
+
+.habCard,
+.projCard {
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.contato {
+    padding: 80px 50px;
+    text-align: center;
+    color: white;
+}
+
+.contato h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contatoContainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.contatoItem {
+    background: #011526;
+    padding: 25px;
+    border-radius: 15px;
+    width: 220px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.contatoItem:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px #00ffff;
+}
+
+.contatoItem a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.contatoItem img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.contatoItem p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*Footer*/
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: row;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        right: auto;
+    }
+
+    .hero {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .texto {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+    .img-programador {
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    .sobreContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobreImg img {
+        width: 250px;
+    }
+
+    .habContainer {
+        gap: 20px;
+    }
+
+    .projContainer {
+        gap: 20px;
+    }
+
+    .contatoContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
